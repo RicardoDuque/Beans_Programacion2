@@ -1,6 +1,6 @@
-#Unity directorys
+#Unity ignore directorys
 Library/
-Temp/
+Juego_Final/Temp/
 .vs/
 obj/
 
