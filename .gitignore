@@ -1,3 +1,9 @@
+#Unity directorys
+Library/
+Temo/
+.vs/
+obj/
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
