@@ -170,6 +170,21 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114362120964126462, guid: e280a6271146b1b409e7cde667abd936,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114341125067977338, guid: e280a6271146b1b409e7cde667abd936,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 95811261137258614, guid: e280a6271146b1b409e7cde667abd936,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e280a6271146b1b409e7cde667abd936, type: 2}
   m_IsPrefabParent: 0
@@ -1005,6 +1020,8 @@ MonoBehaviour:
   - {fileID: 245697506}
   - {fileID: 1606116572}
   - {fileID: 1683349055}
+  PointsScript: {fileID: 1912821199}
+  characterPrice: 5
 --- !u!4 &1305513614
 Transform:
   m_ObjectHideFlags: 0
@@ -1506,6 +1523,16 @@ Prefab:
       propertyPath: textPoints
       value: 
       objectReference: {fileID: 1604161292}
+    - target: {fileID: 114339889774864780, guid: 5bf6b981366762f43b0d8172f37a114f,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114858651200919844, guid: 5bf6b981366762f43b0d8172f37a114f,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bf6b981366762f43b0d8172f37a114f, type: 2}
   m_IsPrefabParent: 0
@@ -2106,6 +2133,16 @@ Prefab:
       propertyPath: points
       value: 
       objectReference: {fileID: 1912821199}
+    - target: {fileID: 114759613703451100, guid: 97aecdefe98a9df4abdd468efdf05867,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114168067320845882, guid: 97aecdefe98a9df4abdd468efdf05867,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 97aecdefe98a9df4abdd468efdf05867, type: 2}
   m_IsPrefabParent: 0
