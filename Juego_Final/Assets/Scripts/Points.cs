@@ -8,9 +8,15 @@ public class Points : MonoBehaviour {
     public static int points = 0;
     public Text textPoints;
 
-	// Use this for initialization
-	void Start () {
-        UpdatePoints();
+    /*
+    public static int showPoints{
+        get{return points;}
+        set{points = value;}
+    }
+    */
+    // Use this for initialization
+    void Start () {
+        UpdatePoints(points);
 	}
 	
 	// Update is called once per frame
@@ -18,7 +24,7 @@ public class Points : MonoBehaviour {
 		
 	}
 
-    void UpdatePoints()
+    public void UpdatePoints(int points)
     {
         textPoints.text = "Puntos: " + points; //Muestra variable points
     }
@@ -26,16 +32,7 @@ public class Points : MonoBehaviour {
     public void GetPoints()
     {
         points++; //Suma puntos a la variable points
-        UpdatePoints(); //Cada vez que ganaun punto, se muestra
+        UpdatePoints(points); //Cada vez que ganaun punto, se muestra
     }
 
-    public void LosePoints()
-    {
-        if (points > 0)
-        {
-            points--;
-            UpdatePoints();
-        }
-        
-    }
 }
