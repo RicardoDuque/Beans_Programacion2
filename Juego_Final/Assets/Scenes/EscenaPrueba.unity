@@ -1020,8 +1020,6 @@ MonoBehaviour:
   - {fileID: 245697506}
   - {fileID: 1606116572}
   - {fileID: 1683349055}
-  PointsScript: {fileID: 1912821199}
-  characterPrice: 5
 --- !u!4 &1305513614
 Transform:
   m_ObjectHideFlags: 0

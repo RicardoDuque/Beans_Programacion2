@@ -2,16 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 //Guía https://www.youtube.com/watch?v=IFTjcPvCZaM
 
-public class CharacterSelector : MonoBehaviour {
+public class CharacterSelector : MonoBehaviour
+{
 
     public static GameObject Characters1, Characters2, Characters3;
     public GameObject[] characters = new GameObject[3] { Characters1, Characters2, Characters3 }; //Se puede hacer mejor con GetChilds
     private int i = 0;
-    public Points PointsScript;
-    public int characterPrice = 5;
+    public int indexPP = 0;
+
+    public Shop shop;
+
+    public int IndexPlayerPrefs
+    {
+        get
+        {
+            return indexPP;
+        }
+
+        set
+        {
+            indexPP = value;
+        }
+    }
 
 
     // Use this for initialization
@@ -21,16 +37,18 @@ public class CharacterSelector : MonoBehaviour {
 
         i = PlayerPrefs.GetInt("CharacterSelected");
 
-        foreach(GameObject go in characters)
+        foreach (GameObject go in characters)
             go.SetActive(false);
 
         characters[i].SetActive(true); //Comienza mostrando el primer character
+
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     public void NextCharacter()
     {
@@ -42,6 +60,9 @@ public class CharacterSelector : MonoBehaviour {
             i++;
 
         characters[i].SetActive(true); //Muestra
+
+        //Contador para almacenar PLayerPrefs
+        indexPP = i;
     }
 
     public void PreviousCharacter()
@@ -54,31 +75,14 @@ public class CharacterSelector : MonoBehaviour {
             i--;
 
         characters[i].SetActive(true); //Muestra
-        
+
+        //Contador para almacenar PlayerPrefs
+        indexPP = i;
     }
 
-    public void ConfirmSelection()
+    public void SavePlayerPrefs()
     {
-        if (Points.points >= characterPrice)
-        {
-            CharacterSelection();
-        }
-
-        LoadLevel();
-
-    }
-
-    public void LoadLevel()
-    {
-        SceneManager.LoadScene("EscenaPrueba");
-    }
-
-    public void CharacterSelection()
-    {
-        Points.points -= 5;//Resta 5 al puntaje global
-        PointsScript.UpdatePoints(Points.points);
-
-        //Points.points =- 1;Resto puntos
+        shop.CharacterSelection();
         PlayerPrefs.SetInt("CharacterSelected", i);
     }
 }
