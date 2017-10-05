@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\CharacterSelector.cs" />
     <Compile Include="Assets\Scripts\CheckGround.cs" />
     <Compile Include="Assets\Scripts\GamePause.cs" />
+    <Compile Include="Assets\Scripts\ItemSelection.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\MovementNoForces.cs" />
     <Compile Include="Assets\Scripts\PlataformaMueve.cs" />
