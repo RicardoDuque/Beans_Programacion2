@@ -9,6 +9,5 @@ public class LevelManager : MonoBehaviour {
     {
         SceneManager.LoadScene(LevelName);
         Time.timeScale = 1f; // 0 = quieto, 1 = velocidad de juego normal (100%)
-
     }
 }

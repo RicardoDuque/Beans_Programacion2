@@ -9,9 +9,7 @@ public class Shop : MonoBehaviour {
     public Points PointsScript;
     public int characterPrice = 5;
     public CharacterSelector characterSel;
-
-    public Text textPrice;
-
+    public Text textPoints;
 
 
     // Use this for initialization
@@ -53,11 +51,14 @@ public class Shop : MonoBehaviour {
                 Debug.Log(ItemSelection.Instance.BoolArray[characterSel.I]);
 
                 characterSel.SavePlayerPrefs();
+                TakePoints();
+
+                //PointsScript.UpdatePoints(Points.points); //Actualiza puntos en juego
+                textPoints.text = "Puntos: " + Points.points; //Actualiza texto puntos
 
             }
         }
 
-        
 
     }
 
@@ -66,9 +67,9 @@ public class Shop : MonoBehaviour {
         SceneManager.LoadScene("EscenaPrueba");
     }
 
-    public void CharacterSelection()
+    public void TakePoints()
     {
-        Points.points -= characterPrice;//Resta 5 al puntaje global
+        Points.points -= characterSel.Price;//Resta 5 al puntaje global
         PointsScript.UpdatePoints(Points.points);
 
         //Points.points =- 1;Resto puntos

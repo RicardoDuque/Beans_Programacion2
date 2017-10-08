@@ -14,6 +14,8 @@ public class MovementNoForces : MonoBehaviour {
     public CharacterSelector characterSel; //Llama al script de selección de personaje
     public Points points; //LLama al script de los puntos
 
+
+
     // Use this for initialization
     void Start () {
         //characterSel.CharacterSelection(); //Pone Sprite

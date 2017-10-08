@@ -65,6 +65,7 @@ public class ItemSelection : MonoBehaviour {
         boolArray[1] = false;
         boolArray[2] = false;
         boolArray[3] = false;
+
     }
 
     public void SetCharacterBought(int characterID) //Cuando compra
@@ -76,4 +77,5 @@ public class ItemSelection : MonoBehaviour {
     {
         boolArray[characterID] = false;
     }
+
 }

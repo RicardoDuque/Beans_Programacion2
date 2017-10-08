@@ -81,6 +81,7 @@
     <Compile Include="Assets\DrawSceneLine.cs" />
     <Compile Include="Assets\DrawtargetCam.cs" />
     <Compile Include="Assets\Scripts\CamaraMueve.cs" />
+    <Compile Include="Assets\Scripts\CharacterPlayable.cs" />
     <Compile Include="Assets\Scripts\CharacterSelector.cs" />
     <Compile Include="Assets\Scripts\CheckGround.cs" />
     <Compile Include="Assets\Scripts\GamePause.cs" />

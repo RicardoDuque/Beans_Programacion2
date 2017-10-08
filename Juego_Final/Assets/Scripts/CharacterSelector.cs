@@ -15,14 +15,14 @@ public class CharacterSelector : MonoBehaviour
 
     public Shop shop;
     public Text textPrice;
+    private int price;
 
-    int j;
-    int isCharacterBuyed = 0;
-
-    public int IsCharacterBuyed
+    public int Price
     {
-        get{return isCharacterBuyed;}
-        set{isCharacterBuyed = value;}
+        get
+        {
+            return price;
+        }
     }
 
     public int I
@@ -31,29 +31,45 @@ public class CharacterSelector : MonoBehaviour
         {
             return i;
         }
-
     }
 
-    // Use this for initialization
     void Start()
     {
-
         i = PlayerPrefs.GetInt("CharacterSelected");
+
         //isCharacterBuyed = PlayerPrefs.GetInt("IsCharacterBuyed");
 
         foreach (GameObject go in characters)
             go.SetActive(false);
 
         characters[i].SetActive(true); //Comienza mostrando el primer character
-
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
+        if (ItemSelection.Instance.BoolArray[i] == true)
+        {
+            textPrice.text = "Comprado";
+        }
 
+        if (ItemSelection.Instance.BoolArray[i] == false)
+        {
+            //PRECIOS JUGADORES
+            if (i == 0)
+                price = 5;
 
-    }
+            if (i == 1)
+                price = 10;
+
+            if (i == 2)
+                price = 15;
+
+            if (i == 3)
+                price = 20;
+
+            UpdatePrice(price); //Cambia texto de precio
+        }
+        }
 
     public void NextCharacter()
     {
@@ -67,6 +83,8 @@ public class CharacterSelector : MonoBehaviour
             characters[i].SetActive(true); //Muestra
 
         Debug.Log(ItemSelection.Instance.BoolArray[i]);
+
+
     }
 
     public void PreviousCharacter()
@@ -81,15 +99,17 @@ public class CharacterSelector : MonoBehaviour
 
         characters[i].SetActive(true); //Muestra
 
-        j = i;
-
         Debug.Log(ItemSelection.Instance.BoolArray[i]);
     }
 
     public void SavePlayerPrefs()
     {
-        shop.CharacterSelection();
         PlayerPrefs.SetInt("CharacterSelected", i);
 
+    }
+
+    public void UpdatePrice (int price)
+    {
+        textPrice.text = "Precio: " + price;
     }
 }

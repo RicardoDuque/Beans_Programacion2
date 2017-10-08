@@ -39,10 +39,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characters:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  player: {fileID: 114445986512443494, guid: 0fa2b18963fbc8144a1a0a20a39dd25d, type: 2}
+  - {fileID: 1140615545677284, guid: e280a6271146b1b409e7cde667abd936, type: 2}
+  - {fileID: 1619947995159454, guid: 97aecdefe98a9df4abdd468efdf05867, type: 2}
+  - {fileID: 1303335055068372, guid: 5bf6b981366762f43b0d8172f37a114f, type: 2}
+  - {fileID: 1568657785600814, guid: e73ad9bd32a64ff4f8766f2734eaa7ac, type: 2}
+  shop: {fileID: 0}
+  textPrice: {fileID: 0}
 --- !u!224 &224458034066767404
 RectTransform:
   m_ObjectHideFlags: 1
