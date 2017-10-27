@@ -24,11 +24,10 @@ GameObject:
   - component: {fileID: 50171924540477402}
   - component: {fileID: 61718758820154962}
   - component: {fileID: 95099784454795466}
-  - component: {fileID: 114575082524495468}
   - component: {fileID: 114373305197616548}
   m_Layer: 0
   m_Name: Blue
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -181,29 +180,15 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1568657785600814}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8633e31eea1d2e46975c41e852a043a, type: 3}
+  m_Script: {fileID: 11500000, guid: 70e65cbabc1915345b53cf88aec89cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 20
   grounded: 0
-  jumpPower: 8
-  characterSel: {fileID: 0}
-  points: {fileID: 114373305197616548}
+  jumpPower: 35
 --- !u!114 &114373305197616548
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1568657785600814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b459cff55aee8aa49891eeee3e9dfbdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textPoints: {fileID: 0}
---- !u!114 &114575082524495468
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -211,9 +196,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1568657785600814}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: b459cff55aee8aa49891eeee3e9dfbdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textPoints: {fileID: 0}
 --- !u!212 &212386745067965592
 SpriteRenderer:
   m_ObjectHideFlags: 1

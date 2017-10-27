@@ -28,12 +28,19 @@ public class CamaraMueve : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
-		if (targetCam != null){
-			float fixedSpeed = speed * Time.deltaTime; //Velocidad multiplicada por el deltaTime(segs)
-			transform.position = Vector3.MoveTowards (transform.position, targetCam.position, fixedSpeed); //Mueve entre transformPosition(actual)
-			//y la posición del target con X velocidad
-		}
-		/*
+        Invoke("MovementCamera", 2); //Cámara se mueve a los 2 segundos
+
+	}
+
+    void MovementCamera()
+    {
+        if (targetCam != null)
+        {
+            float fixedSpeed = speed * Time.deltaTime; //Velocidad multiplicada por el deltaTime(segs)
+            transform.position = Vector3.MoveTowards(transform.position, targetCam.position, fixedSpeed); //Mueve entre transformPosition(actual)
+                                                                                                          //y la posición del target con X velocidad
+        }
+        /*
 		if (transform.position == targetCam.position) { //Si la posición de la plataforma es igual a la posición del target
 
 			//target.position = (target.position == start) ? end : start)://Si targetPosition es igual a la start entonces, target position
@@ -45,7 +52,6 @@ public class CamaraMueve : MonoBehaviour {
 
 		}
 */
-
-	}
+    }
 
 }

@@ -24,11 +24,10 @@ GameObject:
   - component: {fileID: 50863033147064590}
   - component: {fileID: 61396605313144462}
   - component: {fileID: 95811261137258614}
-  - component: {fileID: 114106849398965550}
   - component: {fileID: 114362120964126462}
   m_Layer: 0
   m_Name: Human
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,17 +163,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114106849398965550
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1140615545677284}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114341125067977338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,14 +171,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1140615545677284}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8633e31eea1d2e46975c41e852a043a, type: 3}
+  m_Script: {fileID: 11500000, guid: 70e65cbabc1915345b53cf88aec89cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 20
   grounded: 0
-  jumpPower: 8
-  characterSel: {fileID: 0}
-  points: {fileID: 114362120964126462}
+  jumpPower: 35
 --- !u!114 &114362120964126462
 MonoBehaviour:
   m_ObjectHideFlags: 1

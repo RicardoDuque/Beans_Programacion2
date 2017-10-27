@@ -41,11 +41,10 @@ GameObject:
   - component: {fileID: 50374482459585128}
   - component: {fileID: 61430114960833314}
   - component: {fileID: 95180429274361212}
-  - component: {fileID: 114637907564945308}
   - component: {fileID: 114858651200919844}
   m_Layer: 0
   m_Name: Red
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,14 +171,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1303335055068372}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8633e31eea1d2e46975c41e852a043a, type: 3}
+  m_Script: {fileID: 11500000, guid: 70e65cbabc1915345b53cf88aec89cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 20
   grounded: 0
-  jumpPower: 8
-  characterSel: {fileID: 0}
-  points: {fileID: 114858651200919844}
+  jumpPower: 35
 --- !u!114 &114474503368377300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -189,17 +186,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90d833d17ddeecf4eb66881712d3713c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114637907564945308
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1303335055068372}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114858651200919844
