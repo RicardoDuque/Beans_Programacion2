@@ -35,4 +35,10 @@ public class Points : MonoBehaviour {
         UpdatePoints(points); //Cada vez que ganaun punto, se muestra
     }
 
+    public void VictoryPoints() //Lo llama el PlayerController
+    {
+        points += 10;
+        UpdatePoints(points);
+    }
+
 }

@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - PlatformMoving
   - Damage
+  - Victory
   layers:
   - Default
   - TransparentFX
