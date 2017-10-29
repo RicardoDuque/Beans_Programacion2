@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/PantallaInicio.unity
     guid: 9c96dbe62aef23949b63118219b5554e
   - enabled: 1
-    path: Assets/Scenes/EscenaPrueba.unity
+    path: Assets/Scenes/Runner.unity
     guid: 0c37ff8050058044180735f8e47a55d5
   - enabled: 1
     path: Assets/Scenes/Tienda.unity
     guid: 57b14661d1a25e54994c201b1465c352
+  - enabled: 1
+    path: Assets/Scenes/LevelSelection.unity
+    guid: 7e3035030a4fa8745abd9ff5c4d9e3cd
+  - enabled: 1
+    path: Assets/Scenes/Downfall.unity
+    guid: e05c4f49eb0567741a4d930d438bc7cd

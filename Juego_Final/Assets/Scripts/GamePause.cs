@@ -5,13 +5,13 @@ using UnityEngine;
 public class GamePause : MonoBehaviour {
 
     bool active;
-    Canvas canvas;
+    Canvas canvasPause;
 
     // Use this for initialization
     void Start()
     {
-        canvas = GetComponent<Canvas>();
-        canvas.enabled = false; //Empieza en false para que no aparezca
+        canvasPause = GetComponent<Canvas>();
+        canvasPause.enabled = false; //Empieza en false para que no aparezca
 	}
 	
 	// Update is called once per frame
@@ -20,7 +20,7 @@ public class GamePause : MonoBehaviour {
         if(Input.GetKeyDown("space"))
         {
             active = !active; //cambiamos el valor de active a lo contrario
-            canvas.enabled = active; //Alterna entre activo e inactivo
+            canvasPause.enabled = active; //Alterna entre activo e inactivo
 
             if (active)
             {

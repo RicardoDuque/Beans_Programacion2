@@ -11,9 +11,14 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody2D rb2d; //Importar RigidBody
     private SpriteRenderer spr; //Sprite que se muestra
 	private bool jump; //Para detectar botón
+    private bool dead;
 
-	// Use this for initialization
-	void Start () {
+
+
+    // Use this for initialization
+    void Start () {
+
+        dead = false;
 
 		rb2d = GetComponent<Rigidbody2D> (); //Fuerza RigidBody // Hace referencia al RigidBody del objeto Player	
 		anim = GetComponent<Animator>();//Importar animaciones del Player
@@ -87,17 +92,24 @@ public class PlayerController : MonoBehaviour {
     }
     */
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D other)
     {
-        if (collision.gameObject.tag == "Respawn")
+        
+
+        if (other.gameObject.tag == "Damage") //Si colisiona con 
+        {
+            dead = true;
+            // winLoseScreen.EnableWinLoseScreen();
             Destroy(gameObject);
+            //other.gameObject.GetComponent<PlayerController>().dead = true;
+        }
     }
 
-
-    public void EnemyCollision()
+    public bool Dead
     {
-        jump = true;
-        spr.color = Color.red;
+        get
+        {
+            return dead;
+        }
     }
-
 }

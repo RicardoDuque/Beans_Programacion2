@@ -64,7 +64,7 @@ public class Shop : MonoBehaviour {
 
     public void LoadLevel()
     {
-        SceneManager.LoadScene("EscenaPrueba");
+        SceneManager.LoadScene("LevelSelection");
     }
 
     public void TakePoints()

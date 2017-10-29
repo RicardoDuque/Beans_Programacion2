@@ -8,10 +8,10 @@ using UnityEngine.UI;
 
 public class CharacterSelector : MonoBehaviour
 {
-
     public static GameObject Characters1, Characters2, Characters3, Characters4;
     public GameObject[] characters = new GameObject[4] { Characters1, Characters2, Characters3, Characters4 }; //Se puede hacer mejor con GetChilds
     private int i = 0;
+    private string characterSelectedName;
 
     public Shop shop;
     public Text textPrice;
@@ -33,6 +33,8 @@ public class CharacterSelector : MonoBehaviour
         }
     }
 
+   
+
     void Start()
     {
         i = PlayerPrefs.GetInt("CharacterSelected");
@@ -44,7 +46,7 @@ public class CharacterSelector : MonoBehaviour
 
         characters[i].SetActive(true); //Comienza mostrando el primer character
     }
-    
+
     void Update()
     {
         if (ItemSelection.Instance.BoolArray[i] == true)
@@ -69,18 +71,18 @@ public class CharacterSelector : MonoBehaviour
 
             UpdatePrice(price); //Cambia texto de precio
         }
-        }
+    }
 
     public void NextCharacter()
     {
         characters[i].SetActive(false);
 
-            if (i == characters.Length - 1) //Reinicie contador a 0 cuando llega al final
-                i = 0;
-            else //Si no, suma uno al contador para mostrar el siguiente
-                i++;
+        if (i == characters.Length - 1) //Reinicie contador a 0 cuando llega al final
+            i = 0;
+        else //Si no, suma uno al contador para mostrar el siguiente
+            i++;
 
-            characters[i].SetActive(true); //Muestra
+        characters[i].SetActive(true); //Muestra
 
         Debug.Log(ItemSelection.Instance.BoolArray[i]);
 
@@ -105,11 +107,21 @@ public class CharacterSelector : MonoBehaviour
     public void SavePlayerPrefs()
     {
         PlayerPrefs.SetInt("CharacterSelected", i);
-
+        characterSelectedName = PlayerPrefs.GetInt("CharacterSelected").ToString();
     }
 
-    public void UpdatePrice (int price)
+    public void UpdatePrice(int price)
     {
         textPrice.text = "Precio: " + price;
     }
+
+    public string CharacterSelectedName
+    {
+        get
+        {
+            return characterSelectedName;
+        }
+
+    }
+
 }

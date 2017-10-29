@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: effdfaad8033f014599da8d69c03b3fa
-timeCreated: 1508205324
+timeCreated: 1509130013
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,10 @@ TextureImporter:
     21300002: PlataformaGrande_1
     21300004: PlataformaGrande_2
     21300006: PlataformaGrande_3
+    21300008: PlataformaGrande_4
+    21300010: PlataformaGrande_5
+    21300012: PlataformaGrande_6
+    21300014: PlataformaGrande_7
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -139,6 +143,76 @@ TextureImporter:
         - {x: -134, y: -256}
         - {x: 134, y: -256}
         - {x: 134, y: 256}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlataformaGrande_3
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 512
+        width: 1001
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlataformaGrande_4
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 512
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlataformaGrande_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlataformaGrande_6
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 0
+        width: 536
+        height: 768
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlataformaGrande_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 244
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
       tessellationDetail: 0
     outline: []
     physicsShape: []
