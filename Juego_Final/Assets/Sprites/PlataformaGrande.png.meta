@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: effdfaad8033f014599da8d69c03b3fa
-timeCreated: 1509130013
+timeCreated: 1509315922
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -204,12 +204,12 @@ TextureImporter:
       name: PlataformaGrande_7
       rect:
         serializedVersion: 2
-        x: 500
-        y: 244
-        width: 280
-        height: 280
+        x: 512
+        y: 255
+        width: 256
+        height: 257
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

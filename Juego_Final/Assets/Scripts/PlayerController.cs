@@ -25,9 +25,11 @@ public class PlayerController : MonoBehaviour {
 		rb2d = GetComponent<Rigidbody2D> (); //Fuerza RigidBody // Hace referencia al RigidBody del objeto Player	
 		anim = GetComponent<Animator>();//Importar animaciones del Player
         spr = GetComponent<SpriteRenderer>();
+
+        print(rb2d.mass);
 	}
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         //float move = Input.GetAxis ("Horizontal");
         bool leftMove = Input.GetKey(KeyCode.LeftArrow);
@@ -107,9 +109,11 @@ public class PlayerController : MonoBehaviour {
         if(other.gameObject.tag == "Victory")
         {
             victory = true;
-            GameObject.Find("CanvasVictory").GetComponent<Canvas>().enabled = true;
+            GameObject.Find("CanvasVictory").GetComponent<Canvas>().enabled= true;
             p.VictoryPoints();
         }
+
+        rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
 
     }
 
