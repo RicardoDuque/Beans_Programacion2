@@ -1125,7 +1125,12 @@ Prefab:
     - target: {fileID: 82411313013303428, guid: d006f4b944554a047b0a41b1eea5fa2d,
         type: 2}
       propertyPath: m_Volume
-      value: 0.1
+      value: 0.445
+      objectReference: {fileID: 0}
+    - target: {fileID: 82411313013303428, guid: d006f4b944554a047b0a41b1eea5fa2d,
+        type: 2}
+      propertyPath: Priority
+      value: 102
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d006f4b944554a047b0a41b1eea5fa2d, type: 2}
@@ -1160,7 +1165,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PointsScript: {fileID: 1367265568}
-  characterPrice: 5
   characterSel: {fileID: 1689431992}
   textPoints: {fileID: 1508628313}
 --- !u!224 &769176586

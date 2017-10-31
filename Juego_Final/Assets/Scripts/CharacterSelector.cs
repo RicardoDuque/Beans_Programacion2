@@ -13,7 +13,6 @@ public class CharacterSelector : MonoBehaviour
     private int i = 0;
     private string characterSelectedName;
 
-    public Shop shop;
     public Text textPrice;
     private int price;
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour {
     
-    public static AudioClip audioJump, audioCash, audioSelect; //Audios
+    public static AudioClip audioJump, audioCash, audioSelect, audioVictory, audioDead; //Audios
     static AudioSource audioSrc;
 
     // Use this for initialization
@@ -17,6 +17,9 @@ public class SoundManager : MonoBehaviour {
         audioJump = Resources.Load<AudioClip>("Jump"); //Busca el archivo de audio "" en la carpeta Resources
         audioCash = Resources.Load<AudioClip>("Cash");
         audioSelect = Resources.Load<AudioClip>("Select");
+        audioVictory = Resources.Load<AudioClip>("Victory");
+        audioDead = Resources.Load<AudioClip>("Dead");
+
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -38,6 +41,12 @@ public class SoundManager : MonoBehaviour {
                 break;
             case "Select":
                 audioSrc.PlayOneShot(audioSelect);
+                break;
+            case "Victory":
+                audioSrc.PlayOneShot(audioVictory);
+                break;
+            case "Dead":
+                audioSrc.PlayOneShot(audioDead);
                 break;
         }
     }

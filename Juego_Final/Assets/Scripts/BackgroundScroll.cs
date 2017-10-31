@@ -5,17 +5,18 @@ using UnityEngine;
 public class BackgroundScroll : MonoBehaviour {
 
     public float speed;
-    public Vector2 offset;
 
 	// Use this for initialization
 	void Start () {
-		
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
-        offset.x += speed / 10000;
-        offset.x %= 1;
-        GetComponent<Renderer>().material.mainTextureOffset = offset;
-	}
+
+    void Update()
+    {
+        if (Time.time == 2f) //Espere dos segundos antes de comenzar a mover
+        {
+            Vector2 offset = new Vector2(Time.time * speed, 0);
+            GetComponent<Renderer>().material.mainTextureOffset = offset;
+        }
+
+    }
 }

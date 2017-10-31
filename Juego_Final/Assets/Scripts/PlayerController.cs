@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour {
             
             dead = true;
             GameObject.Find("CanvasDead").GetComponent<Canvas>().enabled = true;
+            SoundManager.PlaySound("Dead");
             Time.timeScale = 0;
             Destroy(gameObject);
             
@@ -98,6 +99,7 @@ public class PlayerController : MonoBehaviour {
         {
             victory = true;
             GameObject.Find("CanvasVictory").GetComponent<Canvas>().enabled = true;
+            SoundManager.PlaySound("Victory"); //Reproduce sonido Victory
             Time.timeScale = 0;
             points.VictoryPoints();
         }

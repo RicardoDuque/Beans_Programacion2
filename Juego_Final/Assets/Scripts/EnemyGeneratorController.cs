@@ -18,11 +18,18 @@ public class EnemyGeneratorController : MonoBehaviour
     {
         InvokeRepeating("CreateEnemy", 2f, generatorTimer); //Invoca la función "" al "" tiempo de inicio, cada "" tiempo
         InvokeRepeating("CreateEnemy", 10f, generatorTimer);
+        InvokeRepeating("CreateEnemy", 10f, 1f);
         InvokeRepeating("CreateEnemy", 20f, generatorTimer);
+        InvokeRepeating("CreateEnemy", 25f, generatorTimer);
         InvokeRepeating("CreateEnemy", 30f, 1.5f); //Luego de 30 segundos genera más y más rápido
         InvokeRepeating("CreateEnemy", 40f, 1.5f);
         InvokeRepeating("CreateEnemy", 60f, 1.5f);
-        InvokeRepeating("CreateEnemy", 700f, 1f);
+        InvokeRepeating("CreateEnemy", 70f, 1f);
+        InvokeRepeating("CreateEnemy", 75f, 1f);
+        InvokeRepeating("CreateEnemy", 80f, 1f);
+        InvokeRepeating("CreateEnemy", 90f, 1f);
+
+
         InvokeRepeating("SumaPuntos", 20f, puntosTimer); //Cada 20 segundos da 10 puntos
     }
 
@@ -30,7 +37,7 @@ public class EnemyGeneratorController : MonoBehaviour
     void Update()
     {
         x = Random.Range(-27, 27);
-        y = 15;
+        y = 17;
         z = 0;
         randomPosition = new Vector3(x, y, z);
 
