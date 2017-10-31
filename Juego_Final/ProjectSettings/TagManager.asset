@@ -9,6 +9,7 @@ TagManager:
   - Damage
   - Victory
   - SoundManagerTag
+  - SueloDestruye
   layers:
   - Default
   - TransparentFX

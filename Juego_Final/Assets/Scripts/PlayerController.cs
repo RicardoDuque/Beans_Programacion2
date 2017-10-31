@@ -97,12 +97,24 @@ public class PlayerController : MonoBehaviour {
         if(other.gameObject.tag == "Victory")
         {
             victory = true;
-            GameObject.Find("CanvasVictory").GetComponent<Canvas>().enabled= true;
+            GameObject.Find("CanvasVictory").GetComponent<Canvas>().enabled = true;
+            Time.timeScale = 0;
             points.VictoryPoints();
         }
 
         rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
 
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision) //Para lvl Downfall
+    {
+        if (collision.gameObject.tag == "Damage") //Si colisiona con 
+        {
+            dead = true;
+            GameObject.Find("CanvasDead").GetComponent<Canvas>().enabled = true;
+            Time.timeScale = 0;
+            Destroy(gameObject);
+        }
     }
 
     public bool Dead

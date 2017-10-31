@@ -174,7 +174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b459cff55aee8aa49891eeee3e9dfbdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPoints: {fileID: 0}
+  textPoints: {fileID: 114924843993620300, guid: d8e11273bd6e21f498b5863ee2f659ee,
+    type: 2}
 --- !u!114 &114785838937732284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -189,7 +190,7 @@ MonoBehaviour:
   speed: 20
   grounded: 0
   jumpPower: 35
-  points: {fileID: 0}
+  points: {fileID: 114340072152692230, guid: cf31de82dce18bb449cdbea09d84ccf1, type: 2}
 --- !u!114 &114792427138531446
 MonoBehaviour:
   m_ObjectHideFlags: 1
