@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement; //Se encarga de administrar las escenas
 
 public class LevelManager : MonoBehaviour {
 
+  
     public void LoadLevel (string LevelName) //Carga nivel
     {
         SceneManager.LoadScene(LevelName);
@@ -14,5 +15,6 @@ public class LevelManager : MonoBehaviour {
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1f;
     }
 }

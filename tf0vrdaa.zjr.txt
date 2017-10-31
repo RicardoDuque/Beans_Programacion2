@@ -1,0 +1,105 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   Juego_Final/Assets/Fonts/Bandwith.ttf
+#	new file:   Juego_Final/Assets/Fonts/Bandwith.ttf.meta
+#	deleted:    Juego_Final/Assets/PantallaPerder-01.png
+#	modified:   Juego_Final/Assets/Prefabs/Blue.prefab
+#	modified:   Juego_Final/Assets/Prefabs/Blue.prefab.meta
+#	modified:   Juego_Final/Assets/Prefabs/CanvasDead.prefab
+#	modified:   Juego_Final/Assets/Prefabs/CanvasDead.prefab.meta
+#	new file:   Juego_Final/Assets/Prefabs/CanvasPause.prefab
+#	renamed:    Juego_Final/Assets/Prefabs/Green.prefab.meta -> Juego_Final/Assets/Prefabs/CanvasPause.prefab.meta
+#	modified:   Juego_Final/Assets/Prefabs/CanvasVictory.prefab
+#	modified:   Juego_Final/Assets/Prefabs/CanvasVictory.prefab.meta
+#	modified:   Juego_Final/Assets/Prefabs/CharacterList.prefab
+#	modified:   Juego_Final/Assets/Prefabs/CharacterList.prefab.meta
+#	new file:   Juego_Final/Assets/Prefabs/Legendary.prefab
+#	new file:   Juego_Final/Assets/Prefabs/Legendary.prefab.meta
+#	new file:   Juego_Final/Assets/Prefabs/PlatformPrefabs/Plataforma4x1 1.prefab
+#	new file:   Juego_Final/Assets/Prefabs/PlatformPrefabs/Plataforma4x1 1.prefab.meta
+#	modified:   Juego_Final/Assets/Prefabs/PlatformPrefabs/PlataformaVoladoraCuadradaPuas (1).prefab
+#	modified:   Juego_Final/Assets/Prefabs/Red.prefab
+#	modified:   Juego_Final/Assets/Prefabs/Red.prefab.meta
+#	renamed:    Juego_Final/Assets/Prefabs/Green.prefab -> Juego_Final/Assets/Prefabs/RedSir.prefab
+#	new file:   Juego_Final/Assets/Prefabs/RedSir.prefab.meta
+#	new file:   Juego_Final/Assets/Prefabs/RedStrong.prefab
+#	new file:   Juego_Final/Assets/Prefabs/RedStrong.prefab.meta
+#	new file:   Juego_Final/Assets/Prefabs/SoundManager.prefab
+#	new file:   Juego_Final/Assets/Prefabs/SoundManager.prefab.meta
+#	new file:   Juego_Final/Assets/Resources.meta
+#	new file:   Juego_Final/Assets/Resources/Cash.mp3
+#	new file:   Juego_Final/Assets/Resources/Cash.mp3.meta
+#	new file:   Juego_Final/Assets/Resources/Click.wav
+#	new file:   Juego_Final/Assets/Resources/Click.wav.meta
+#	new file:   Juego_Final/Assets/Resources/Jump.wav
+#	new file:   Juego_Final/Assets/Resources/Jump.wav.meta
+#	new file:   Juego_Final/Assets/Resources/MusicaFondo.mp3
+#	new file:   Juego_Final/Assets/Resources/MusicaFondo.mp3.meta
+#	new file:   Juego_Final/Assets/Resources/Select.wav
+#	new file:   Juego_Final/Assets/Resources/Select.wav.meta
+#	modified:   Juego_Final/Assets/Scenes/Downfall.unity
+#	modified:   Juego_Final/Assets/Scenes/LevelSelection.unity
+#	modified:   Juego_Final/Assets/Scenes/PantallaInicio.unity
+#	modified:   Juego_Final/Assets/Scenes/Runner.unity
+#	modified:   Juego_Final/Assets/Scenes/Tienda.unity
+#	modified:   Juego_Final/Assets/Scripts/CharacterPlayable.cs
+#	modified:   Juego_Final/Assets/Scripts/CharacterSelector.cs
+#	modified:   Juego_Final/Assets/Scripts/CheckGround.cs
+#	modified:   Juego_Final/Assets/Scripts/ItemSelection.cs
+#	modified:   Juego_Final/Assets/Scripts/LevelManager.cs
+#	modified:   Juego_Final/Assets/Scripts/PlayerController.cs
+#	modified:   Juego_Final/Assets/Scripts/Points.cs
+#	modified:   Juego_Final/Assets/Scripts/Shop.cs
+#	new file:   Juego_Final/Assets/SoundManager.cs
+#	new file:   Juego_Final/Assets/SoundManager.cs.meta
+#	new file:   Juego_Final/Assets/SoundManagerMenu.cs
+#	new file:   Juego_Final/Assets/SoundManagerMenu.cs.meta
+#	deleted:    Juego_Final/Assets/Sprites/1-01.png
+#	new file:   Juego_Final/Assets/Sprites/Characters.meta
+#	renamed:    Juego_Final/Assets/Sprites/BlueCharacter.png -> Juego_Final/Assets/Sprites/Characters/BlueCharacter.png
+#	renamed:    Juego_Final/Assets/Sprites/BlueCharacter.png.meta -> Juego_Final/Assets/Sprites/Characters/BlueCharacter.png.meta
+#	renamed:    Juego_Final/Assets/Sprites/GreenCharacter.png -> Juego_Final/Assets/Sprites/Characters/GreenCharacter.png
+#	renamed:    Juego_Final/Assets/Sprites/GreenCharacter.png.meta -> Juego_Final/Assets/Sprites/Characters/GreenCharacter.png.meta
+#	new file:   Juego_Final/Assets/Sprites/Characters/LegendaryCharacter.png
+#	new file:   Juego_Final/Assets/Sprites/Characters/LegendaryCharacter.png.meta
+#	renamed:    Juego_Final/Assets/Sprites/RedCharacter.png -> Juego_Final/Assets/Sprites/Characters/RedCharacter.png
+#	renamed:    Juego_Final/Assets/Sprites/RedCharacter.png.meta -> Juego_Final/Assets/Sprites/Characters/RedCharacter.png.meta
+#	new file:   Juego_Final/Assets/Sprites/Characters/RedSirCharacter.png
+#	new file:   Juego_Final/Assets/Sprites/Characters/RedSirCharacter.png.meta
+#	new file:   Juego_Final/Assets/Sprites/Characters/RedStrongCharacter.png
+#	new file:   Juego_Final/Assets/Sprites/Characters/RedStrongCharacter.png.meta
+#	new file:   Juego_Final/Assets/Sprites/UI/COMPRADO.png
+#	renamed:    Juego_Final/Assets/Sprites/1-01.png.meta -> Juego_Final/Assets/Sprites/UI/COMPRADO.png.meta
+#	new file:   Juego_Final/Assets/Sprites/UI/DOWNFALL.png
+#	renamed:    Juego_Final/Assets/PantallaPerder-01.png.meta -> Juego_Final/Assets/Sprites/UI/DOWNFALL.png.meta
+#	new file:   Juego_Final/Assets/Sprites/UI/FLECHA 1.png
+#	new file:   Juego_Final/Assets/Sprites/UI/FLECHA 1.png.meta
+#	new file:   Juego_Final/Assets/Sprites/UI/FLECHA 2.png
+#	new file:   Juego_Final/Assets/Sprites/UI/FLECHA 2.png.meta
+#	new file:   Juego_Final/Assets/Sprites/UI/JUEGO.png
+#	new file:   Juego_Final/Assets/Sprites/UI/JUEGO.png.meta
+#	new file:   Juego_Final/Assets/Sprites/UI/MENU.png
+#	new file:   Juego_Final/Assets/Sprites/UI/MENU.png.meta
+#	new file:   Juego_Final/Assets/Sprites/UI/REINICIAR.png
+#	new file:   Juego_Final/Assets/Sprites/UI/REINICIAR.png.meta
+#	new file:   Juego_Final/Assets/Sprites/UI/RUNNER.png
+#	new file:   Juego_Final/Assets/Sprites/UI/RUNNER.png.meta
+#	new file:   Juego_Final/Assets/Sprites/UI/SELECCIONAR.png
+#	new file:   Juego_Final/Assets/Sprites/UI/SELECCIONAR.png.meta
+#	new file:   Juego_Final/Assets/Sprites/UI/TIENDA.png
+#	new file:   Juego_Final/Assets/Sprites/UI/TIENDA.png.meta
+#	new file:   Juego_Final/Assets/Sprites/UI/fLECHA BACK.png
+#	new file:   Juego_Final/Assets/Sprites/UI/fLECHA BACK.png.meta
+#	new file:   Juego_Final/Assets/Sprites/UI/fondo tienda.jpg
+#	new file:   Juego_Final/Assets/Sprites/UI/fondo tienda.jpg.meta
+#	new file:   Juego_Final/Assets/Sprites/fondo tienda.png
+#	new file:   Juego_Final/Assets/Sprites/fondo tienda.png.meta
+#	modified:   Juego_Final/Juego_Final.csproj
+#	modified:   Juego_Final/ProjectSettings/TagManager.asset
+#
+

@@ -8,8 +8,8 @@ using UnityEngine.UI;
 
 public class CharacterSelector : MonoBehaviour
 {
-    public static GameObject Characters1, Characters2, Characters3, Characters4;
-    public GameObject[] characters = new GameObject[4] { Characters1, Characters2, Characters3, Characters4 }; //Se puede hacer mejor con GetChilds
+    public static GameObject Characters1, Characters2, Characters3, Characters4, Characters5;
+    public GameObject[] characters = new GameObject[5] { Characters1, Characters2, Characters3, Characters4, Characters5 }; //Se puede hacer mejor con GetChilds
     private int i = 0;
     private string characterSelectedName;
 
@@ -69,6 +69,9 @@ public class CharacterSelector : MonoBehaviour
             if (i == 3)
                 price = 20;
 
+            if (i == 4)
+                price = 50;
+
             UpdatePrice(price); //Cambia texto de precio
         }
     }
@@ -108,6 +111,8 @@ public class CharacterSelector : MonoBehaviour
     {
         PlayerPrefs.SetInt("CharacterSelected", i);
         characterSelectedName = PlayerPrefs.GetInt("CharacterSelected").ToString();
+
+        SoundManager.PlaySound("Cash");
     }
 
     public void UpdatePrice(int price)

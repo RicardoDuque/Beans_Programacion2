@@ -8,6 +8,7 @@ TagManager:
   - PlatformMoving
   - Damage
   - Victory
+  - SoundManagerTag
   layers:
   - Default
   - TransparentFX

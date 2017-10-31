@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class ItemSelection : MonoBehaviour {
 
-    private bool[] boolArray = new bool[4];
+    private bool[] boolArray = new bool[5];
 
     private static ItemSelection instance;
 
@@ -43,7 +43,6 @@ public class ItemSelection : MonoBehaviour {
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-
         }
         else
         {
@@ -65,6 +64,7 @@ public class ItemSelection : MonoBehaviour {
         boolArray[1] = false;
         boolArray[2] = false;
         boolArray[3] = false;
+        boolArray[4] = false;
 
     }
 

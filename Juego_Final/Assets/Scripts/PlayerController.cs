@@ -9,27 +9,25 @@ public class PlayerController : MonoBehaviour {
 	public float jumpPower = 6.5f; //Variable para el salto
 	private Animator anim; //Importar animaciones
 	private Rigidbody2D rb2d; //Importar RigidBody
-    private SpriteRenderer spr; //Sprite que se muestra
 	private bool jump; //Para detectar botón
     private bool dead;
     private bool victory;
-    public Points p;
+    public Points points;
 
-
+    
     // Use this for initialization
     void Start () {
 
         dead = false;
         victory = false;
-
+        
 		rb2d = GetComponent<Rigidbody2D> (); //Fuerza RigidBody // Hace referencia al RigidBody del objeto Player	
 		anim = GetComponent<Animator>();//Importar animaciones del Player
-        spr = GetComponent<SpriteRenderer>();
 
-        print(rb2d.mass);
 	}
 
-    void FixedUpdate()
+
+    void Update()
     {
         //float move = Input.GetAxis ("Horizontal");
         bool leftMove = Input.GetKey(KeyCode.LeftArrow);
@@ -39,12 +37,12 @@ public class PlayerController : MonoBehaviour {
         if (leftMove)
         {
             rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
-            transform.localScale = new Vector3(-1f, 1f, 1f);    //Voltea el sprite        
+            transform.localScale = new Vector3(-1f, transform.localScale.y, 1f);    //Voltea el sprite        
         }
         if (rightMove)
         {
             rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
-            transform.localScale = new Vector3(1f, 1f, 1f); //Voltea el sprite
+            transform.localScale = new Vector3(1f, transform.localScale.y, 1f); //Voltea el sprite
         }
 
         
@@ -61,7 +59,7 @@ public class PlayerController : MonoBehaviour {
             rb2d.velocity = fixedVelocity;
         else
             rb2d.velocity = fixedVelocity;
-
+        
         //Para cambbio animaciones
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x)); //Mathf.Abs: Busca el valor absoluto o la distancia que hay entre un punto
                                                             //y otro punto, independientemente de si es positivo o negativo, es la dist. 
@@ -72,6 +70,7 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         {
             jump = true;
+            SoundManager.PlaySound("Jump"); //Reproduce sonido Jump
         }
         if (jump)
         {
@@ -82,26 +81,15 @@ public class PlayerController : MonoBehaviour {
 
         }
     }
-    /*
-    void OnBecameInvisible(){ //Detecta cuando desaparecemos de la escena
-
-        //Vector3 punto = (mainCamera.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, mainCamera.nearClipPlane)));
-        //rb2d.transform.position = new Vector3(0, -4, 0);
-        //Debug.Log(mainCamera.gameObject.transform.position.x);
-        //   Rect(Screen.width / 2, Screen.height);
-        float centerPos = Camera.current.transform.position.x;
-
-        transform.position = new Vector3(centerPos, -4, 0);
-
-    }
-    */
 
     public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Damage") //Si colisiona con 
         {
+            
             dead = true;
             GameObject.Find("CanvasDead").GetComponent<Canvas>().enabled = true;
+            Time.timeScale = 0;
             Destroy(gameObject);
             
         }
@@ -110,7 +98,7 @@ public class PlayerController : MonoBehaviour {
         {
             victory = true;
             GameObject.Find("CanvasVictory").GetComponent<Canvas>().enabled= true;
-            p.VictoryPoints();
+            points.VictoryPoints();
         }
 
         rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
